@@ -1,9 +1,9 @@
-name: Garmin Connect Daily Sync
+name: Garmin Connect Sync
 
 on:
   schedule:
-    # 06:00 JST = 21:00 UTC (previous day)
-    - cron: "0 21 * * *"
+    # every 30 minutes
+    - cron: "*/30 * * * *"  # Runs at 21:00
   workflow_dispatch: {}
 
 permissions:
